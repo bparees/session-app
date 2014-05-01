@@ -15,7 +15,7 @@
       Context context = new InitialContext();
       //Context envCtx = (Context) context.lookup("java:jboss/datasources/MysqlDS");
       //ds =  (DataSource)envCtx.lookup("datasources/MysqlDS");
-      ds = (DataSource) context.lookup("java:jboss/datasources/MysqlDS");
+      ds = (DataSource) context.lookup("java:jboss/datasources/MySQLDS");
       if (ds != null) {
         conn = ds.getConnection();
         stmt = conn.createStatement();
